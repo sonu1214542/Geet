@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RecyclerViewItemTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">32dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ButtonStyle24" parent="ButtonStyleBase">
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="ButtonStyleBase">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="icon">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="album">
+        <item name="cornerSize">25%</item>
+    </style>
+</resources>

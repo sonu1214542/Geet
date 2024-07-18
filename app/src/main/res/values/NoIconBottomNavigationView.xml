@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="NoIconBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@android:color/transparent</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavigationView.TextAppearance</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavigationView.TextAppearance</item>
+    </style>
+
+    <style name="BottomNavigationView.TextAppearance" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

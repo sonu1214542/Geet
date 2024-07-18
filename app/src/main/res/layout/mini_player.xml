@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dummy"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/miniplayer_shape"
+    android:elevation="2dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <SeekBar
+        android:id="@+id/currentProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progressTint="#3F51B5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/currentSong"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="5dp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="NO SONG PLAYING"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentProgressBar"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:background="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/currentProgressBar"
+        app:srcCompat="@drawable/baseline_play_arrow_24" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="41dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentProgressBar"
+        app:shapeAppearanceOverlay="@style/icon"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toTopOf="@+id/currentProgressBar"
+        app:srcCompat="@drawable/baseline_skip_next_24" />
+
+    <ImageButton
+        android:id="@+id/prevButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="12dp"
+        android:background="@color/design_default_color_primary"
+        app:layout_constraintBottom_toBottomOf="@+id/playButton"
+        app:layout_constraintEnd_toStartOf="@+id/playButton"
+        app:layout_constraintTop_toTopOf="@+id/playButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_skip_previous_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
