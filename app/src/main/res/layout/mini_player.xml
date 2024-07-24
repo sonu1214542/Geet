@@ -15,6 +15,7 @@
         android:id="@+id/currentProgressBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:progressTint="#3F51B5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,6 +28,7 @@
         android:layout_marginTop="5dp"
         android:marqueeRepeatLimit="marquee_forever"
         android:text="NO SONG PLAYING"
+        android:textColor="#6200ED"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/currentProgressBar"

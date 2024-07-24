@@ -35,6 +35,10 @@ class AllSongsAdapter(private val itemClickListener: OnItemClickListener) : List
                 MainActivity._clickedPos.value=position
             }
         }
+        holder.itemView.setOnLongClickListener {
+            itemClickListener.onItemLongClick(song)
+            true
+        }
         holder.bind(song)
     }
 

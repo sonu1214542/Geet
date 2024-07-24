@@ -28,6 +28,7 @@ import com.bumptech.glide.Glide
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.mvvm.geet2.AllSongsRepo.Companion.songsLiveData
+import com.mvvm.geet2.entities.Song
 import com.mvvm.geet2.fragments.AlbumFragment
 import com.mvvm.geet2.fragments.AlbumFragmentHolder
 import com.mvvm.geet2.fragments.AllSongsFragment
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
             clickedSongQueue.value?.clear()
             clickedSongQueue.postValue(songs)
         }
+        var songToAddToPlaylist:Song?=null
 //        fun getQueueFlow():Flow<List<Songs>> = clickedSongQueue.asFlow()
     }
 
@@ -90,7 +92,6 @@ class MainActivity : AppCompatActivity() {
                 initviews()
             }
         }
-
     }
 
     private fun initviews(){
@@ -194,7 +195,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
     class MyPagerAdapter(activity: AppCompatActivity) : FragmentStateAdapter(activity) {
-        private val fragmentNames = arrayOf("Songs", "Albums","Queue")
+        private val fragmentNames = arrayOf("Songs", "Albums","Playlists","Queue")
 
         override fun getItemCount(): Int = fragmentNames.size
 
@@ -203,8 +204,8 @@ class MainActivity : AppCompatActivity() {
             return when (position) {
                 0 -> AllSongsFragment()
                 1 -> AlbumFragmentHolder()
-//                2 -> PlaylistFragment()
-                2 -> QueueFragment()
+                2 -> PlaylistFragment()
+                3 -> QueueFragment()
                 else -> throw IllegalStateException("Unexpected position $position")
             }
         }

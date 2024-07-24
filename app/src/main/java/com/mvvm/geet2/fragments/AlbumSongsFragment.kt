@@ -66,6 +66,10 @@ class AlbumSongsFragment : Fragment() {
             override fun onItemClick(song: Songs) {
                 playerViewmodel.Play()
             }
+
+            override fun onItemLongClick(song: Songs) {
+                Unit
+            }
         })
         Log.e("AllSongsRepo.songsLiveData.value",songs.size.toString())
         recyclerView=view.findViewById(R.id.album_songs_rv)

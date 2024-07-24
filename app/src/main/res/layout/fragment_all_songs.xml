@@ -5,11 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".fragments.AllSongsFragment">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="allsongs" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/allsongsrv"
         android:layout_width="match_parent"
