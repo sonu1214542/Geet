@@ -26,7 +26,7 @@
 
 
 <h2>Contributing</h2>
-<p>We welcome contributions! Please fork the repository and submit pull requests.</p>
+<p>We welcome contributions!</p>
 
 <h2>Contact</h2>
 <p>If you have any questions or feedback, please contact us at <a href="mailto:sonu.saimanas@gmail.com">sonu.saimanas@gmail.com</a>.</p>
